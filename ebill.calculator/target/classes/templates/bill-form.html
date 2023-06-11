@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Utility Bill Calculator</title>
+</head>
+<body>
+<h1>Utility Bill Calculator</h1>
+<form action="/calculate" method="post">
+    <h2>Room 01 </h2>
+    <label for="room1_new_bill_reading">New Bill Reading:</label>
+    <input type="number" step="any" id="room1_new_bill_reading" name="room1_new_bill_reading" required>
+    <label for="room1_old_bill_reading">Old Bill Reading:</label>
+    <input type="number" step="any" id="room1_old_bill_reading" name="room1_old_bill_reading" required>
+
+    <h2>Room 02 </h2>
+    <label for="room2_new_bill_reading">New Bill Reading:</label>
+    <input type="number" step="any" id="room2_new_bill_reading" name="room2_new_bill_reading" required>
+    <label for="room2_old_bill_reading">Old Bill Reading:</label>
+    <input type="number" step="any" id="room2_old_bill_reading" name="room2_old_bill_reading" required>
+
+    <h2>Room 03 </h2>
+    <label for="room3_new_bill_reading">New Bill Reading:</label>
+    <input type="number" step="any" id="room3_new_bill_reading" name="room3_new_bill_reading" required>
+    <label for="room3_old_bill_reading">Old Bill Reading:</label>
+    <input type="number" step="any" id="room3_old_bill_reading" name="room3_old_bill_reading" required>
+
+    <h2>Motar</h2>
+    <label for="motar_new_bill_reading">New Bill Reading:</label>
+    <input type="number" step="any" id="motar_new_bill_reading" name="motar_new_bill_reading" required>
+    <label for="motar_old_bill_reading">Old Bill Reading:</label>
+    <input type="number" step="any" id="motar_old_bill_reading" name="motar_old_bill_reading" required>
+
+    <h2>Total Bill Amount</h2>
+    <label for="total_bill_amount">Total Bill Amount:</label>
+    <input type="number" step="any" id="total_bill_amount" name="total_bill_amount" required>
+
+    <h2>Water Bill</h2>
+    <label for="water_bill_amount">Water Bill Amount</label>
+    <input type="number" step="any" id="water_bill_amount" name="water_bill_amount" required>
+
+    <h2>Other Expenses</h2>
+    <label for="other_expenses">Other Expenses</label>
+    <input type="number" step="any" id="other_expenses" name="other_expenses" required>
+    <br><br>
+    <label for="due_date">Due Date:</label>
+    <input type="date" step="any" id="due_date"  name="due_date" required>
+    <br><br>
+    <input style="font-size:25px; background-color:green; color:white;font-weight:bolder; " type="submit" value="Calculate">
+</form>
+</body>
+</html>
