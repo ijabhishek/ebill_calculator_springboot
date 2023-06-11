@@ -1,5 +1,3 @@
-Sure! Here is the README file for the project:
-
 # Utility Bill Calculator
 
 This project is a utility bill calculator that calculates the individual bill amount for three rooms and a motor based on the provided bill readings and other parameters. It is implemented using Spring MVC framework with Thymeleaf as the template engine.
