@@ -58,11 +58,13 @@
     <th>Total Electricity Bill Amount</th>
     <th>Avg. Bill Amount Per unit</th>
     <th>Moter Bill Amount</th>
+    <th>Water Bill Amount</th>
   </tr>
   <tr>
     <td th:text="${total_bill_amount}"></td>
     <td th:text="${avgBillAmount}"></td>
     <td th:text="${motarBillAmount}"></td>
+    <td th:text="${waterBillAmount}"></td>
   </tr>
 </table>
 
@@ -81,15 +83,16 @@
   </tr>
   <tr>
     <td>Room 2</td>
-    <td th:text="${room1_bill_before_any_addon +'   +   ' + motarBillAmountPerPerson + '   +   ' + waterBillAmountPerPerson + '   +   '+ otherExpensesPerPerson }"></td>
+    <td th:text="${room2_bill_before_any_addon +'   +   ' + motarBillAmountPerPerson + '   +   ' + waterBillAmountPerPerson + '   +   '+ otherExpensesPerPerson }"></td>
     <td  style="font-weight: bold; background-color: pink;font-size: 25px; padding-right: 15px;" th:text="${room2BillAmount}"></td>
   </tr>
   <tr>
     <td>Room 3</td>
-    <td th:text="${room1_bill_before_any_addon +' + ' + motarBillAmountPerPerson + ' + ' + waterBillAmountPerPerson + ' + '+ otherExpensesPerPerson }"></td>
+    <td th:text="${room3_bill_before_any_addon +' + ' + motarBillAmountPerPerson + ' + ' + waterBillAmountPerPerson + ' + '+ otherExpensesPerPerson }"></td>
     <td  style="font-weight: bold; background-color: yellow;font-size: 25px; padding-right: 15px; " th:text="${room3BillAmount}"></td>
   </tr>
 </table>
+<p><b>Please pay before July 6, 2023</b> </p>
 <h2>Thank You</h2>
 </body>
 </html>
