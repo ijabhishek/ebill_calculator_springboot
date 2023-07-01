@@ -50,8 +50,8 @@ public class EbillController {
 
         // Bill amount before adding water bill, motarbill and anyother expenses r1 - room1
         double r1 = (double) Math.round(((room1UnitsConsumed / (double) totalUnitsConsumed) * totalBillAmount) * 1000) /1000;
-        double r2 = (double) Math.round(((room1UnitsConsumed / (double) totalUnitsConsumed) * totalBillAmount)*1000)/1000;
-        double r3 = (double) Math.round(((room1UnitsConsumed / (double) totalUnitsConsumed) * totalBillAmount)*1000)/1000;;
+        double r2 = (double) Math.round(((room2UnitsConsumed / (double) totalUnitsConsumed) * totalBillAmount)*1000)/1000;
+        double r3 = (double) Math.round(((room3UnitsConsumed / (double) totalUnitsConsumed) * totalBillAmount)*1000)/1000;;
 
 
         // Calculate the individual bill amount
